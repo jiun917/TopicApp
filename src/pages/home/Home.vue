@@ -4,6 +4,7 @@
       <home-ad> </home-ad>
       <home-recommend></home-recommend>
       <home-contents></home-contents>
+      <home-popular></home-popular>
   </div>
 </template>
 
@@ -12,7 +13,7 @@ import HomeHeader from './components/Header.vue'
 import HomeAd from './components/Ad.vue'
 import HomeRecommend from './components/Recommend.vue'
 import HomeContents from './components/Contents.vue'
-
+import HomePopular from './components/Popular.vue'
 
 export default {
     name:'HomePage',
@@ -20,7 +21,8 @@ export default {
       HomeHeader,
       HomeAd,
       HomeRecommend,
-      HomeContents
+      HomeContents,
+      HomePopular
     }
 }
 </script>
