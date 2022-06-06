@@ -16,7 +16,6 @@
               icon="place"
               class="absolute"
               style="top: 0; right: 0.24rem; transform: translateY(-80%);"
-
               />
               <div class="row no-wrap items-center">
                 <div class="col  ellipsis text-bold">
@@ -26,7 +25,38 @@
                   5km
                 </div>
               </div>
-              <div class="row grade">
+              <div class="row rating">
+                <span class="grade">5.0</span>
+                <q-rating  v-model="starts" :max="5" size="0.4rem" color="#FFD400" readonly  />
+              </div>
+              <div class="text-grey ellipsis /">
+                Small plates, salads & sandwiches in an intimate setting.
+              </div>
+            </q-card-section>
+          </q-card>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="q-pa-md  items-start q-gutter-md ">
+          <q-card class="my-card">
+            <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
+            <q-card-section >
+              <q-btn
+              round
+              color="primary"
+              icon="place"
+              class="absolute"
+              style="top: 0; right: 0.24rem; transform: translateY(-80%);"
+              />
+              <div class="row no-wrap items-center">
+                <div class="col  ellipsis text-bold">
+                  肯德基
+                </div>
+                <div class="col-auto text-grey  items-center">
+                  5km
+                </div>
+              </div>
+              <div class="row rating">
                 <span class="grade">5.0</span>
                 <q-rating v-model="stars" :max="5" size="0.4rem" />
               </div>
@@ -57,38 +87,7 @@
                   5km
                 </div>
               </div>
-              <div class="row grade">
-                <span class="grade">5.0</span>
-                <q-rating v-model="stars" :max="5" size="0.4rem" />
-              </div>
-              <div class="text-grey ellipsis /">
-                Small plates, salads & sandwiches in an intimate setting.
-              </div>
-            </q-card-section>
-          </q-card>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="q-pa-md  items-start q-gutter-md ">
-          <q-card class="my-card">
-            <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
-            <q-card-section >
-              <q-btn
-              round
-              color="primary"
-              icon="place"
-              class="absolute"
-              style="top: 0; right: 0.24rem; transform: translateY(-80%);"
-              />
-              <div class="row no-wrap items-center">
-                <div class="col  ellipsis text-bold">
-                  肯德基
-                </div>
-                <div class="col-auto text-grey  items-center">
-                  5km
-                </div>
-              </div>
-              <div class="row grade">
+              <div class="row rating">
                 <span class="grade">5.0</span>
                 <q-rating v-model="stars" :max="5" size="0.4rem" />
               </div>
@@ -114,7 +113,11 @@
         Swiper,
         SwiperSlide
       },
-    
+      data () {
+        return {
+          starts: 3
+        }
+      }
   }
 </script>
 
@@ -129,6 +132,10 @@
     .my-card
         height: 4.52rem 
         width: 4.42rem
+        .rating
+            align-items: center
+            .grade 
+                margin-right: 0.05rem
   .divider 
     height: 0.14rem
     background-color: #F2F2F2

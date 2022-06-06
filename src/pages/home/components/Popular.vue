@@ -26,7 +26,7 @@
                                     5km
                                 </div>
                             </div>
-                            <div class="row grade">
+                            <div class="row  rating">
                                 <span class="grade">5.0</span>
                                 <q-rating v-model="stars" :max="5" size="0.4rem" />
                             </div>
@@ -57,7 +57,7 @@
                                     5km
                                 </div>
                             </div>
-                            <div class="row grade">
+                            <div class="row  rating">
                                 <span class="grade">5.0</span>
                                 <q-rating v-model="stars" :max="5" size="0.4rem" />
                             </div>
@@ -88,7 +88,7 @@
                                     5km
                                 </div>
                             </div>
-                            <div class="row grade">
+                            <div class="row  rating">
                                 <span class="grade">5.0</span>
                                 <q-rating v-model="stars" :max="5" size="0.4rem" />
                             </div>
@@ -127,4 +127,8 @@
     .my-card
         height: 4.52rem 
         width: 4.42rem
+        .rating
+            align-items: center
+            .grade 
+                margin-right: 0.05rem
 </style>

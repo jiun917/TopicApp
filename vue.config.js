@@ -4,11 +4,10 @@ module.exports = defineConfig({
     'quasar'
   ],
  
-
   pluginOptions: {
     quasar: {
       importStrategy: 'kebab',
       rtlSupport: false
     }
-  }
+  },
 })

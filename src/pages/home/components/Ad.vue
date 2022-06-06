@@ -22,7 +22,6 @@
   </div>
 </div>
 <div class="divider">
-
 </div>
 </template>
 

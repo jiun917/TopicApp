@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/pages/home/Home.vue'
+import FriendPage from '@/pages/friend/Friend.vue'
+import MapPage from '@/pages/map/Map.vue'
+import MemberPage from '@/pages/member/Member.vue'
+import OrderPage from '@/pages/order/Order.vue'
 
 const routes = [
   {
@@ -7,6 +11,26 @@ const routes = [
     name: 'home',
     component: HomePage
   },
+  {
+    path: '/friend',
+    name: 'friend',
+    component: FriendPage
+  },
+  {
+    path: '/map',
+    name: 'map',
+    component: MapPage
+  },
+  {
+    path: '/member',
+    name: 'member',
+    component: MemberPage
+  },
+  {
+    path: '/order',
+    name: 'order',
+    component: OrderPage
+  }
   // {
   //   path: '/about',
   //   name: 'about',
